@@ -16,7 +16,7 @@ logging.basicConfig(
         logging.StreamHandler(sys.stdout)
     ]
 )
-logger = logging.getLogger('data_producer')
+logger = logging.getLogger('kaf_data_producer')
 
 # Get database connection parameters from environment variables
 DB_HOST = os.getenv('POSTGRES_HOST', 'localhost')
